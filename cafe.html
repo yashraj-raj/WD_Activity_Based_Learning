@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CURIOUS Cafe</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf0;
+    color: #333;
+}
+
+header {
+    background: #244b32;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    color: #d9ed92;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #d9ed92;
+}
+
+.hero {
+    min-height: 450px;
+    background:
+        linear-gradient(#0007, #0007),
+        url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1600&q=85");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #537d3d;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #35572a;
+}
+
+section {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+section h2 {
+    color: #244b32;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    width: 270px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #0002;
+    transition: 0.3s;
+}
+
+
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    color: #35572a;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.price {
+    color: #537d3d;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+
+.reservation {
+    background: #f1eadb;
+}
+
+form {
+    max-width: 500px;
+    margin: 25px auto 0;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #0001;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+footer {
+    background: #244b32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 2;
+}
+
+footer a {
+    color: #d9ed92;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>☕CURIOUS Cafe</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reserve">Reserve</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Welcome to CURIOUS Cafe</h1>
+    <p>Fresh coffee, delicious food, and beautiful moments.</p>
+    <a href="#menu" class="btn">Explore Our Menu</a>
+</div>
+
+<section id="about">
+    <h2>🌿 About Us</h2>
+    <p class="intro">
+        Welcome to CURIOUS Cafe, a cozy place to relax,
+        enjoy freshly brewed coffee, and share delicious food with
+        family and friends. We believe every cup tells a story
+        and every visit creates a beautiful memory.
+    </p>
+</section>
+
+<section id="menu">
+    <h2>🍽️ Our Menu</h2>
+    <p>Discover our favorite drinks, snacks, and desserts.</p>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="Fresh cup of coffee" loading="lazy">
+            <div class="card-content">
+                <h3>Classic Coffee</h3>
+                <p>Freshly brewed coffee with a rich aroma.</p>
+                <p class="price">₹99</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=700&q=80" alt="Creamy cappuccino" loading="lazy">
+            <div class="card-content">
+                <h3>Cappuccino</h3>
+                <p>Smooth espresso topped with creamy milk foam.</p>
+                <p class="price">₹149</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80" alt="Fresh croissants" loading="lazy">
+            <div class="card-content">
+                <h3>Fresh Croissant</h3>
+                <p>A buttery, flaky pastry baked to perfection.</p>
+                <p class="price">₹89</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Chocolate cake" loading="lazy">
+            <div class="card-content">
+                <h3>Chocolate Cake</h3>
+                <p>Rich chocolate cake for your sweet cravings.</p>
+                <p class="price">₹129</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=700&q=80" alt="Fresh sandwich" loading="lazy">
+            <div class="card-content">
+                <h3>Veg Sandwich</h3>
+                <p>A tasty sandwich packed with fresh vegetables.</p>
+                <p class="price">₹119</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=80" alt="Ice cream dessert" loading="lazy">
+            <div class="card-content">
+                <h3>Ice Cream</h3>
+                <p>A cool and creamy treat for every occasion.</p>
+                <p class="price">₹79</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="reservation" id="reserve">
+    <h2>📅 Reserve a Table</h2>
+    <p>Plan your next coffee break with us!</p>
+
+    <form action="mailto:cafe@example.com"
+          method="post" enctype="text/plain">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <input type="tel" name="Phone" placeholder="Phone Number" required>
+        <input type="date" name="Date" required>
+        <input type="time" name="Time" required>
+
+        <select name="Guests" required>
+            <option value="">Number of Guests</option>
+            <option>1 Person</option>
+            <option>2 People</option>
+            <option>3 People</option>
+            <option>4 People</option>
+            <option>5 or More</option>
+        </select>
+
+        <textarea name="Requests" rows="3"
+                  placeholder="Special Requests (optional)"></textarea>
+
+        <button type="submit" class="btn">Request Reservation</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>📞Contact Us</h2>
+    <p class="intro">
+        Have questions or want to visit us?
+        We would love to hear from you!
+        <br><br>
+        <strong>Address:</strong> Your City, India
+        <br>
+        <strong>Phone:</strong> +91 98765 43210
+        <br>
+        <strong>Opening Hours:</strong> 9:00 AM – 9:00 PM
+    </p>
+    <br>
+    <a href="mailto:cafe@example.com" class="btn">Email Us</a>
+</section>
+
+<footer>
+<p>☕ CURIOUS Cafe</p>
+    <p>Fresh Coffee • Delicious Food • Happy Moments</p>
+    <p>© 2026 CURIOUS Cafe. All Rights Reserved.</p>
+</footer>               
+</body>
+</html>

@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Esports Arena</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #090914;
+    color: white;
+}
+
+header {
+    background: #17102b;
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    color: #bd5cff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #bd5cff;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #190d35, #4b1480);
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #d9a5ff;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #932cff;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+
+
+
+section {
+    padding: 55px 6%;
+    text-align: center;
+}
+
+section h2 {
+    color: #d9a5ff;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.card {
+    background: #181329;
+  
+    width: 280px;
+    padding: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+
+
+.game-image {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.card h3 {
+    color: #d9a5ff;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #d1c9df;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.tag {
+    color: #65e6ff;
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+footer {
+    background: #17102b;
+    text-align: center;
+    padding: 25px;
+    color: #ae57da;
+    line-height: 2;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>🎮 ESPORTS ARENA</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#games">PC Games</a>
+        <a href="#multiplayer">Multiplayer</a>
+        <a href="#tournaments">Tournaments</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>WELCOME TO GAMING ARENA</h1>
+    <p>Explore legendary worlds. Battle your rivals. Become a champion!</p>
+    <a href="#games" class="btn">Explore Games</a>
+</div>
+
+<section id="games">
+<h2>🔥 FAMOUS PC GAMES</h2>
+
+<div class="cards">
+
+<div class="card">
+<img class="game-image" src="https://i.pinimg.com/736x/fa/ca/f9/facaf9c49495baeecbbb65fa3d4c94f8.jpg" alt="Minecraft" loading="lazy">
+<h3>Minecraft</h3>
+<span class="tag">SANDBOX • SURVIVAL</span>
+<p>Build amazing worlds, explore caves, craft tools, and survive dangerous mobs.</p>
+<a href="https://www.minecraft.net/" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+<div class="card">
+<img class="game-image" src="https://i.pinimg.com/736x/63/60/a7/6360a7dd3f1158700f3c307e3f95768c.jpg" alt="Roblox" loading="lazy">
+<h3>Roblox</h3>
+<span class="tag">MULTIPLAYER • CREATION</span>
+<p>Discover exciting experiences, play with friends, and create your own games.</p>
+<a href="https://www.roblox.com/" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+<div class="card">
+<img class="game-image" src="https://i.pinimg.com/736x/85/9e/d3/859ed3b68e92fe81829d2b888f3d4ef0.jpg" alt="God of War Ragnarok" loading="lazy">
+<h3>God of War Ragnarök</h3>
+<span class="tag">ACTION • ADVENTURE</span>
+<p>Join Kratos and Atreus on an epic journey through Norse mythology.</p>
+<a href="https://store.steampowered.com/app/2322010/" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+<div class="card">
+<img class="game-image" src="https://i.pinimg.com/1200x/7c/7c/44/7c7c445f3d55f829799fedc17e349a99.jpg" alt="GTA V" loading="lazy">
+<h3>GTA V</h3>
+<span class="tag">OPEN WORLD • ACTION</span>
+<p>Explore Los Santos, drive vehicles, and experience an action-packed open world.</p>
+<a href="https://www.rockstargames.com/gta-v" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+<div class="card">
+<img class="game-image" src="https://i.pinimg.com/736x/58/8c/b0/588cb0b1a50b70188ef15e7024accca2.jpg" alt="Counter Strike 2" loading="lazy">
+<h3>Counter-Strike 2</h3>
+<span class="tag">FPS • COMPETITIVE</span>
+<p>Use teamwork, sharpen your aim, and compete in tactical battles.</p>
+<a href="https://www.counter-strike.net/cs2" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+<div class="card">
+<img class="game-image" src="https://i.pinimg.com/736x/db/f6/f0/dbf6f0dfb05593803af94f1276f0441b.jpg" alt="Valorant" loading="lazy">
+<h3>Valorant</h3>
+<span class="tag">FPS • ESPORTS</span>
+<p>Combine accurate shooting with special abilities in competitive team matches.</p>
+<a href="https://playvalorant.com/" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+<div class="card">
+<img class="game-image" src="https://i.pinimg.com/1200x/ec/6c/70/ec6c7042d94a91a575acacaa2af72d80.jpg" alt="Fortnite" loading="lazy">
+<h3>Fortnite</h3>
+<span class="tag">BATTLE ROYALE</span>
+<p>Fight opponents, build structures, and try to be the last player standing.</p>
+<a href="https://www.fortnite.com/" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+<div class="card">
+<img class="game-image" src="https://i.pinimg.com/736x/15/de/12/15de1228813542ed83c6c17337223723.jpg" alt="CALL OF DUTY" loading="lazy">
+<h3>COD</h3>
+<span class="tag">ACTION • THRILLING</span>
+<p>CALL OF DUTY is a popular action game.</p>
+<a href="https://en.bandainamcoent.eu/elden-ring/elden-ring" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+<div class="card">
+<img class="game-image" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077" loading="lazy">
+<h3>Cyberpunk 2077</h3>
+<span class="tag">RPG • OPEN WORLD</span>
+<p>Explore futuristic Night City in an adventure filled with technology and action.</p>
+<a href="https://www.cyberpunk.net/" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+<div class="card">
+<img class="game-image" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1551360/header.jpg" alt="Forza Horizon 5" loading="lazy">
+<h3>Forza Horizon 5</h3>
+<span class="tag">RACING • OPEN WORLD</span>
+<p>Race amazing cars, explore scenic landscapes, and compete in exciting events.</p>
+<a href="https://forza.net/" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+<div class="card">
+<img class="game-image" src="https://i.pinimg.com/736x/b2/87/66/b28766608aa677f78536bc2bf788d371.jpg" alt="Resident Evil 4" loading="lazy">
+<h3>Resident Evil 4</h3>
+<span class="tag">HORROR • SURVIVAL</span>
+<p>Fight terrifying enemies and survive a dangerous mission full of suspense.</p>
+<a href="https://www.residentevil.com/re4/" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+<div class="card">
+<img class="game-image" src="https://i.pinimg.com/1200x/23/ed/0e/23ed0e383322227bb704ffdce73503dd.jpg       " alt="Red Dead Redemption 2" loading="lazy">
+<h3>Red Dead Redemption 2</h3>
+<span class="tag">WESTERN • ADVENTURE</span>
+<p>Explore the Wild West in a story filled with adventure and action.</p>
+<a href="https://i.pinimg.com/1200x/23/ed/0e/23ed0e383322227bb704ffdce73503dd.jpg" target="_blank" rel="noopener" class="btn">Explore Game</a>
+</div>
+
+</div>
+</section>
+
+<section id="multiplayer">
+<h2>🎮 PLAY WITH FRIENDS</h2>
+<div class="cards">
+    <div class="card">
+        <h3>Multiplayer Battles</h3>
+        <p>Discover competitive games and challenge your friends.</p>
+    </div>
+    <div class="card">
+        <h3>Survival Adventures</h3>
+        <p>Build, explore, and survive together in exciting worlds.</p>
+    </div>
+    <div class="card">
+        <h3>Racing Challenges</h3>
+        <p>Test your driving skills and race towards victory.</p>
+    </div>
+</div>
+</section>
+
+<section id="tournaments">
+<h2>🏆 ESPORTS TOURNAMENTS</h2>
+<div class="cards">
+    <div class="card">
+        <h3>Battle Royale Cup</h3>
+        <p>Mode: Squad Competition</p>
+        <p>Join the battle and show your skills!</p>
+        <a href="mailto:esports@example.com?subject=Tournament%20Registration" class="btn">Register Now</a>
+    </div>
+    <div class="card">
+        <h3>FPS Championship</h3>
+        <p>Mode: Team vs Team</p>
+        <p>Compete, cooperate, and aim for victory!</p>
+        <a href="mailto:esports@example.com?subject=FPS%20Registration" class="btn">Register Now</a>
+    </div>
+</div>
+</section>
+
+<footer>
+    <p>© 2026 Esports Arena | Gaming Community</p>
+    <p>LEVEL UP • PLAY TO WIN • NEVER GIVE UP 🎮</p>
+</footer>
+</body>
+</html>
